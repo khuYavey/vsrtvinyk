@@ -441,15 +441,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 if __name__ == '__main__':
-    groupchat_id = '-1001947980528'
-    ignore_id = '-1001502222694' # <- чат ігноруйте
-    chat_for_cleaning = '-1001807080149'
+    groupchat_id = ''
+    ignore_id = '' 
+    chat_for_cleaning = ''
 
-    active_colivers = ['@maarrggoosshha',
-                       '@memepepi','@ffannim', '@lubustok', '@honcharilla',
-                       '@Malinadura', '@Qbik_col', '@Max_Sitka',
-                       '@light_blue', '@trojan_o', '@strelbetska_s',
-                       '@khlgtkm', '@hatorihandzo', '@tiivanka', '@tabinska', '@flambeurrr']
+    active_colivers = ['@random',
+                       '@random2','@random3']
     cleaning_calendar = {}
     date_data = Date()
     user_data = User_data()
@@ -463,7 +460,7 @@ if __name__ == '__main__':
         temp = datetime.datetime.today() + datetime.timedelta(days=len(active_colivers))
         date_data.update_date(start=datetime.datetime.today().date(), refresh=temp.date())
 
-    application = ApplicationBuilder().token('6106699482:AAHBxhx1GF4GVD8CgaUrhXCebVzmcpeJrDU').build()
+    application = ApplicationBuilder().token('').build()
     # Start the thread
 
 
